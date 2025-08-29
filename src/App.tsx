@@ -31,7 +31,7 @@ import {
 } from "lucide-react";
 
 // ------------------------------
-// PromiseX — Orchestrated FedEx Experience (lightweight, animated)
+// PromiseX — Orchestrated Fulfillment Experience (lightweight, animated)
 // ------------------------------
 
 // Define the available lanes with distance, transit times and base costs.
