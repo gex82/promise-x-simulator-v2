@@ -21,6 +21,7 @@ import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
   ComposedChart, PieChart, Pie, Cell, LineChart, Line
 } from "recharts";
+import type { TooltipProps } from "recharts";
 
 // Icons from lucide-react. These are tree-shaken and lightweight.
 import {
@@ -380,6 +381,24 @@ export default function PromiseXSimulator() {
 
   // Palette selection based on high contrast state.
   const palette = highContrast ? COLORS_HC : COLORS;
+
+  // Custom tooltip to ensure text remains visible on dark backgrounds.
+  const renderDriversTooltip = ({ active, payload }: TooltipProps<number, string>) => {
+    if (!active || !payload?.length) return null;
+    const p = payload[0];
+    return (
+      <div
+        style={{
+          background: "#0b1220",
+          border: "1px solid #334155",
+          color: palette.text,
+          padding: "4px 8px",
+        }}
+      >
+        {p.name}: {fmtPct(p.value as number)}
+      </div>
+    );
+  };
 
   // Persona intro card built from PERSONA_COPY.
   const personaIntro = (
@@ -990,12 +1009,7 @@ export default function PromiseXSimulator() {
                                   <Cell key={i} fill={d.color} />
                                 ))}
                               </Pie>
-                              <Tooltip
-                                contentStyle={{ background: "#0b1220", border: "1px solid #334155", color: palette.text }}
-                                itemStyle={{ color: palette.text }}
-                                labelStyle={{ color: palette.text }}
-                                formatter={(v: any, n: any) => [`${fmtPct(v as number)}`, n as string]}
-                              />
+                              <Tooltip content={renderDriversTooltip} />
                               <Legend
                                 verticalAlign="bottom"
                                 layout="horizontal"
