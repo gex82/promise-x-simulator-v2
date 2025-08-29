@@ -976,7 +976,7 @@ export default function PromiseXSimulator() {
                         </CardHeader>
                         <CardContent className="h-60">
                           <ResponsiveContainer width="100%" height="100%">
-                            <PieChart margin={{ top: 24, bottom: 80 }}>
+                            <PieChart margin={{ top: 40, bottom: 80 }}>
                               <Pie
                                 {...animFast}
                                 isAnimationActive={animate}
@@ -992,13 +992,15 @@ export default function PromiseXSimulator() {
                               </Pie>
                               <Tooltip
                                 contentStyle={{ background: "#0b1220", border: "1px solid #334155", color: palette.text }}
+                                itemStyle={{ color: palette.text }}
+                                labelStyle={{ color: palette.text }}
                                 formatter={(v: any, n: any) => [`${fmtPct(v as number)}`, n as string]}
                               />
                               <Legend
                                 verticalAlign="bottom"
                                 layout="horizontal"
                                 height={32}
-                                wrapperStyle={{ color: palette.text, paddingTop: 8 }}
+                                wrapperStyle={{ color: palette.text, paddingTop: 16 }}
                               />
                             </PieChart>
                           </ResponsiveContainer>
