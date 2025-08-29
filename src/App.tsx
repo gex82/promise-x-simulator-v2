@@ -974,9 +974,9 @@ export default function PromiseXSimulator() {
                             <Cog className="w-4 h-4" /> Top drivers
                           </CardTitle>
                         </CardHeader>
-                        <CardContent className="h-40">
+                        <CardContent className="h-48">
                           <ResponsiveContainer width="100%" height="100%">
-                            <PieChart margin={{ top: 0, bottom: 24 }}>
+                            <PieChart margin={{ top: 0, bottom: 40 }}>
                               <Pie
                                 {...animFast}
                                 isAnimationActive={animate}
