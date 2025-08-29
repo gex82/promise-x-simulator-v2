@@ -926,7 +926,7 @@ export default function PromiseXSimulator() {
                                 <Tooltip
                                   contentStyle={{ background: "#0b1220", border: "1px solid #334155", color: palette.text }}
                                 />
-                                <Bar {...animFast} isAnimationActive={animate} dataKey="CO2" />
+                                <Bar {...animFast} isAnimationActive={animate} dataKey="CO2" fill={palette.line} />
                               </BarChart>
                             </ResponsiveContainer>
                           </div>
@@ -1385,6 +1385,7 @@ export default function PromiseXSimulator() {
                             yAxisId="left"
                             dataKey="CO2"
                             name="CO₂ kg"
+                            fill={palette.area}
                           />
                           <Bar
                             {...animFast}
@@ -1392,6 +1393,7 @@ export default function PromiseXSimulator() {
                             yAxisId="right"
                             dataKey="OTP"
                             name="OTP %"
+                            fill={palette.line}
                           />
                         </BarChart>
                       </ResponsiveContainer>
