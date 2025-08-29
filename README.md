@@ -1,6 +1,6 @@
 # PromiseX Simulator (v2)
 
-This repository contains an enhanced, lightweight React application demonstrating **PromiseX** — a concept vision that orchestrates FedEx assets like Surround, SenseAware, Dataworks, FSI and fdx to deliver smarter promises.  Compared to the original prototype, this version:
+This repository contains an enhanced, lightweight React application demonstrating **PromiseX** — a concept vision that orchestrates Fulfillment assets to deliver smarter promises.  Compared to the original prototype, this version:
 
 - Adds a short **persona guide** with clear descriptions and bullets so users know what each tab is about.
 - Replaces the simplistic shipping estimate chart with a **probability density plot** for the ETA window.  The peak height reflects likelihood and the vertical marker shows the median (P50) delivery day.

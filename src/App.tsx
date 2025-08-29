@@ -31,7 +31,7 @@ import {
 } from "lucide-react";
 
 // ------------------------------
-// PromiseX — Orchestrated FedEx Experience (lightweight, animated)
+// PromiseX — Orchestrated Fulfillment Experience (lightweight, animated)
 // ------------------------------
 
 // Define the available lanes with distance, transit times and base costs.
@@ -448,8 +448,8 @@ export default function PromiseXSimulator() {
                 <ShieldCheck className="w-6 h-6 text-indigo-200" />
               </div>
               <div>
-                <h1 className="text-xl md:text-2xl font-semibold tracking-tight">PromiseX — Orchestrated FedEx Experience</h1>
-                <p className="text-white text-sm">Checkout confidence • risk‑aware ops • carbon‑aware sales (Surround · SenseAware · Dataworks · FSI · fdx)</p>
+                <h1 className="text-xl md:text-2xl font-semibold tracking-tight">PromiseX — Orchestrated Fulfillment Experience</h1>
+                <p className="text-white text-sm">Checkout confidence • risk‑aware ops • carbon‑aware sales</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -1480,9 +1480,9 @@ export default function PromiseXSimulator() {
           </Tabs>
 
           <div className="mt-6 text-[11px] text-white">
-            Notes: Illustrative simulator. Emission factors are adjustable and do not represent official FedEx
+            Notes: Illustrative simulator. Emission factors are adjustable and do not represent official Fulfillment
             Sustainability Insights. No raw sensor data is exposed—only derived signals (risk, coverage).
-            Demonstrates orchestration of Surround, SenseAware, Dataworks, FSI and fdx‑style delivery promises.
+            Demonstrates orchestration of delivery promises.
           </div>
         </div>
       </TooltipProvider>
